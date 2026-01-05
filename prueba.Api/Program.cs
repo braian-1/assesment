@@ -12,12 +12,13 @@ DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
-//
 // ==========================
 // DATABASE (MySQL)
 // ==========================
 var connection = Environment.GetEnvironmentVariable("DB_CONNECTION");
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
 //
 // ==========================
