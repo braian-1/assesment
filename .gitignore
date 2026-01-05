@@ -1,0 +1,50 @@
+# =========================
+# .NET / Visual Studio
+# =========================
+bin/
+obj/
+**/bin/
+**/obj/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+appsettings.Development.json
+appsettings.Production.json
+
+# =========================
+# Rider / VS Code
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Test results
+# =========================
+TestResults/
+
+# =========================
+# Publish
+# =========================
+publish/
